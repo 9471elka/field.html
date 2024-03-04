@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soccer Field</title>
+<style>
+    .soccer-field {
+        width: 400px; /* Adjust width as needed */
+        height: 200px; /* Adjust height as needed */
+        position: relative;
+        background-color: green;
+    }
+    .penalty-area {
+        width: 100px; /* Adjust width as needed */
+        height: 60px; /* Adjust height as needed */
+        background-color: white;
+        position: absolute;
+    }
+    .penalty-area.left {
+        left: 0;
+        top: 70px;
+    }
+    .penalty-area.right {
+        right: 0;
+        top: 70px;
+    }
+    .center-circle {
+        width: 100px; /* Adjust diameter as needed */
+        height: 100px; /* Adjust diameter as needed */
+        border: 2px solid white;
+        border-radius: 50%;
+        position: absolute;
+        left: 150px; /* Adjust position as needed */
+        top: 50px; /* Adjust position as needed */
+    }
+    .corner-mark {
+        width: 10px;
+        height: 10px;
+        background-color: black;
+        position: absolute;
+        border-radius: 100%;
+    }
+    .corner-mark.top-left {
+        left: 0;
+        top: 0;
+    }
+    .corner-mark.top-right {
+        right: 0;
+        top: 0;
+    }
+    .corner-mark.bottom-left {
+        left: 0;
+        bottom: 0;
+    }
+    .corner-mark.bottom-right {
+        right: 0;
+        bottom: 0;
+    }
+</style>
+</head>
+<body>
+
+<div class="soccer-field">
+    <div class="penalty-area left"></div>
+    <div class="penalty-area right"></div>
+    <div class="center-circle"></div>
+    <div class="corner-mark top-left"></div>
+    <div class="corner-mark top-right"></div>
+    <div class="corner-mark bottom-left"></div>
+    <div class="corner-mark bottom-right"></div>
+</div>
+
+</body>
+</html>
